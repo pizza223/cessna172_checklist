@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cessna 172 チェックリスト / Cessna 172 Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .language-switch {
+            margin-bottom: 20px;
+        }
+        .language-switch button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .language-switch button.active {
+            background-color: #ddd;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <button id="btn-ja" onclick="showLanguage('ja')">日本語</button>
+        <button id="btn-en" onclick="showLanguage('en')">English</button>
+    </div>
+    
+    <!-- Japanese Content -->
+<div id="content-ja" class="content">
+    <h1>Cessna 172 チェックリスト</h1>
+    <div class="section">
+        <h2>飛行前チェック</h2>
+        <ul>
+            <li><strong>書類と装備</strong>
+                <ul>
+                    <li>航空機のログブック確認</li>
+                    <li>許可証、保険証書の確認</li>
+                </ul>
+            </li>
+            <li><strong>外部チェック</strong>
+                <ul>
+                    <li>燃料レベル確認</li>
+                    <li>オイルレベル確認</li>
+                    <li>外部構造の確認（翼、尾翼、エンジンなど）</li>
+                    <li>タイヤの状態と空気圧確認</li>
+                    <li>燃料ドレインから水分と異物を確認</li>
+                    <li>プロペラとスピナーの状態確認</li>
+                    <li>ピトー管の状態とカバーの取り外し</li>
+                </ul>
+            </li>
+            <li><strong>コックピットチェック</strong>
+                <ul>
+                    <li>バッテリー電圧確認</li>
+                    <li>ラジオ、通信機器の確認</li>
+                    <li>計器の動作確認</li>
+                    <li>燃料セレクターの確認（主燃料タンクを選択）</li>
+                    <li>シートベルトとハーネスの装着</li>
+                    <li>フライトプランの確認と提出</li>
+                    <li>計器設定（高度計、方位計、VORなど）</li>
+                </ul>
+            </li>
+            <li><strong>エンジン始動前チェック</strong>
+                <ul>
+                    <li>各スイッチとレバーの位置確認（フルスロットル、プロペラピッチ）</li>
+                    <li>主電源ON</li>
+                    <li>燃料ポンプON（必要な場合）</li>
+                    <li>エンジン始動</li>
+                    <li>アイドル時のエンジン音確認</li>
+                    <li>油圧と油温の正常範囲確認</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>飛行中チェック</h2>
+        <ul>
+            <li><strong>エンジンパラメータ確認</strong>
+                <ul>
+                    <li>回転数（RPM）</li>
+                    <li>温度（油温、冷却水温など）</li>
+                    <li>圧力（オイル圧、気圧）</li>
+                    <li>燃料流量確認</li>
+                </ul>
+            </li>
+            <li><strong>飛行状態の確認</strong>
+                <ul>
+                    <li>航行計器（高度、速度、方向）</li>
+                    <li>フライトプランの確認</li>
+                    <li>外部視界と他機の確認</li>
+                    <li>ナビゲーション計器の確認と調整</li>
+                    <li>無線通信の確認と調整</li>
+                </ul>
+            </li>
+            <li><strong>燃料管理</strong>
+                <ul>
+                    <li>燃料レベル確認</li>
+                    <li>燃料スイッチの切り替え（必要な場合）</li>
+                    <li>エンジン燃料混合比の調整</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>飛行後チェック</h2>
+        <ul>
+            <li><strong>エンジンシャットダウン</strong>
+                <ul>
+                    <li>エンジン停止</li>
+                    <li>電源OFF</li>
+                    <li>燃料ポンプOFF</li>
+                    <li>各スイッチとレバーをOFFに戻す</li>
+                </ul>
+            </li>
+            <li><strong>コックピット整理</strong>
+                <ul>
+                    <li>設備やスイッチを元の位置に戻す</li>
+                    <li>シートベルトとハーネスの取り外し</li>
+                    <li>コックピット内のゴミや不要物の整理</li>
+                </ul>
+            </li>
+            <li><strong>外部チェック</strong>
+                <ul>
+                    <li>燃料残量確認</li>
+                    <li>航空機の外観確認（損傷や異常の確認）</li>
+                    <li>タイヤとブレーキの状態確認</li>
+                    <li>プロペラとエンジンカウルの確認</li>
+                    <li>ピトー管のカバー取り付け</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <p>このチェックリストは基本的なものであり、詳細な手順はセスナ172の具体的なモデルや装備によって異なることがあります。必ず最新の運航マニュアルを参照してください。</p>
+</div>
+
+<!-- English Content -->
+<div id="content-en" class="content">
+    <h1>Cessna 172 Checklist</h1>
+    <div class="section">
+        <h2>Pre-Flight Check</h2>
+        <ul>
+            <li><strong>Documents and Equipment</strong>
+                <ul>
+                    <li>Check aircraft logbook</li>
+                    <li>Verify certificates and insurance</li>
+                </ul>
+            </li>
+            <li><strong>External Check</strong>
+                <ul>
+                    <li>Check fuel level</li>
+                    <li>Check oil level</li>
+                    <li>Inspect external structure (wings, tail, engine, etc.)</li>
+                    <li>Check tire condition and pressure</li>
+                    <li>Drain fuel to check for water and contaminants</li>
+                    <li>Inspect propeller and spinner</li>
+                    <li>Check pitot tube and remove cover</li>
+                </ul>
+            </li>
+            <li><strong>Cockpit Check</strong>
+                <ul>
+                    <li>Check battery voltage</li>
+                    <li>Verify radio and communication equipment</li>
+                    <li>Check instrument functionality</li>
+                    <li>Verify fuel selector (select main fuel tank)</li>
+                    <li>Fasten seatbelts and harnesses</li>
+                    <li>Confirm and file flight plan</li>
+                    <li>Set instruments (altimeter, heading indicator, VOR, etc.)</li>
+                </ul>
+            </li>
+            <li><strong>Engine Start-up Check</strong>
+                <ul>
+                    <li>Check switch and lever positions (full throttle, propeller pitch)</li>
+                    <li>Turn on master switch</li>
+                    <li>Turn on fuel pump (if needed)</li>
+                    <li>Start engine</li>
+                    <li>Check engine idle sound</li>
+                    <li>Confirm oil pressure and temperature in normal range</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>In-Flight Check</h2>
+        <ul>
+            <li><strong>Engine Parameters</strong>
+                <ul>
+                    <li>Check RPM</li>
+                    <li>Check temperature (oil temp, coolant temp, etc.)</li>
+                    <li>Check pressure (oil pressure, atmospheric pressure)</li>
+                    <li>Verify fuel flow</li>
+                </ul>
+            </li>
+            <li><strong>Flight Status</strong>
+                <ul>
+                    <li>Check navigation instruments (altitude, speed, direction)</li>
+                    <li>Verify flight plan</li>
+                    <li>Monitor external visibility and other aircraft</li>
+                    <li>Adjust navigation instruments as necessary</li>
+                    <li>Adjust radio communications as necessary</li>
+                </ul>
+            </li>
+            <li><strong>Fuel Management</strong>
+                <ul>
+                    <li>Check fuel level</li>
+                    <li>Switch fuel tanks (if needed)</li>
+                    <li>Adjust engine fuel mixture</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Post-Flight Check</h2>
+        <ul>
+            <li><strong>Engine Shutdown</strong>
+                <ul>
+                    <li>Stop engine</li>
+                    <li>Turn off power</li>
+                    <li>Turn off fuel pump</li>
+                    <li>Return all switches and levers to OFF position</li>
+                </ul>
+            </li>
+            <li><strong>Cockpit Organization</strong>
+                <ul>
+                    <li>Return equipment and switches to original position</li>
+                    <li>Remove seatbelts and harnesses</li>
+                    <li>Organize any debris or unwanted items in the cockpit</li>
+                </ul>
+            </li>
+            <li><strong>External Check</strong>
+                <ul>
+                    <li>Check fuel remaining</li>
+                    <li>Inspect aircraft exterior (look for damage or abnormalities)</li>
+                    <li>Check tire and brake condition</li>
+                    <li>Inspect propeller and engine cowling</li>
+                    <li>Replace pitot tube cover</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <p>This checklist is basic and may vary based on the specific model and equipment of the Cessna 172. Always refer to the latest operating manual for detailed procedures.</p>
+</div>
+
+<script>
+        function showLanguage(language) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(function(div) {
+                div.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.language-switch button').forEach(function(button) {
+                button.classList.remove('active');
+            });
+
+            // Show the selected language content
+            document.getElementById('content-' + language).classList.add('active');
+
+            // Add active class to the selected button
+            document.getElementById('btn-' + language).classList.add('active');
+        }
+
+        // Set default language to Japanese
+        showLanguage('ja');
+    </script>
+</body>
+</html>
